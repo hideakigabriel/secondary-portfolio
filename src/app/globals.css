@@ -18,10 +18,23 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #010314;
+}
+
+::-webkit-scrollbar {
+  width: 6px
+}
+
+::-webkit-scrollbar-track {
+  background: #010314;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6F19EB;
+  border-radius: 15px;
+  transition-duration: 300ms;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #43029f;
 }
