@@ -69,6 +69,7 @@ export default function Home() {
       </header>
 
       <main className="bg-gradient-to-b from-violet-950/50 from-10% to-transparent">
+        {/* Hero */}
         <section className="max-w-8xl mx-32 m-auto py-14">
           <div className="flex justify-start items-center space-x-96">
             <div className="flex-col space-y-4">
@@ -80,17 +81,17 @@ export default function Home() {
               </h1>
               <p className="text-2xl">
                 Passionate about technology{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-purple-500">
+                <span className="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-blue-800 to-purple-500">
                   |
                 </span>{" "}
                 Always looking for innovation{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-purple-500">
+                <span className="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-blue-800 to-purple-500">
                   |
                 </span>{" "}
                 <br /> Performance & Design💜{" "}
               </p>
               <div className="flex space-x-10">
-                <div className="flex items-center justify-center cursor-pointer rounded-full transition ease-in-out shadow-xl hover:shadow-gray-500/20 duration-300">
+                <div className="flex items-center justify-center cursor-pointer rounded-full transition ease-in-out shadow-xl hover:shadow-gray-500/20 hover:-translate-y-1 hover:scale-110 duration-300">
                   <div className="h-14 w-full rounded-full bg-gray-800 p-[3px]">
                     <div className="flex h-full rounded-full w-full items-center justify-center bg-gray-950 back">
                       <h1 className="text-xl font-semibold text-white px-8 py-8">
@@ -100,7 +101,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="flex items-center justify-center cursor-pointer rounded-full transition ease-in-out shadow-xl hover:shadow-indigo-500/20 duration-300">
+                <div className="flex items-center justify-center cursor-pointer rounded-full transition ease-in-out shadow-xl hover:shadow-indigo-500/20 hover:-translate-y-1 hover:scale-110 duration-300">
                   <div className="h-14 w-full rounded-full bg-gradient-to-r from-blue-800 to-purple-500 p-[3px]">
                     <div className="flex h-full rounded-full w-full items-center justify-center bg-gray-950 back">
                       <h1 className="text-xl font-semibold text-white px-8 py-8">
@@ -121,32 +122,40 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section className="max-w-8xl mx-32 m-auto py-14">
+          <div className="flex flex-col m-auto max-w-7xl py-12 px-5 bg-zinc-900/40 border-gray-700 border-solid border-[0.1em] rounded-[70px]">
+            <h1 className="text-center font-black text-5xl selection:bg-fuchsia-300 selection:text-fuchsia-900"> I'am modern <span className="cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-purple-500 transition ease-in-out hover:scale-110 duration-300">Web Developer</span></h1>
+          </div>
+        </section>
+
+
       </main>
 
       <footer className="h-64 bg-gradient-to-t from-violet-950/50 from-10% to-transparent">
-        <div className="flex justify-center gap-48 max-w-8xl mx-32 m-auto">
+        <div className="flex justify-center items-baseline gap-48 max-w-8xl mx-32 m-auto">
 
-          <div className="flex flex-col items-center gap-6">
+          <div className="transition ease-in-out flex flex-col items-center gap-6 hover:scale-110 cursor-pointer">
             <img
-              src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png"
+              src="/github-logo.svg"
               width={50}
               height={50}
             />
             <span className="text-sm tracking-[1em] uppercase">GITHUB</span>
           </div>
 
-          <div className="flex flex-col items-center gap-6">
+          <div className="transition ease-in-out flex flex-col items-center gap-6 hover:scale-110 cursor-pointer">
             <img
-              src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png"
+              src="/behance-logo.svg"
               width={50}
               height={50}
             />
             <span className="text-sm tracking-[1em] uppercase">BEHANCE</span>
           </div>
 
-          <div className="flex flex-col items-center gap-6">
+          <div className="transition ease-in-out flex flex-col items-center gap-6 hover:scale-110 cursor-pointer">
             <img
-              src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png"
+              src="/linkedin-logo.svg"
               width={50}
               height={50}
             />
