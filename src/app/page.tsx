@@ -74,7 +74,7 @@ export default function Home() {
           <div className="flex justify-start items-center space-x-96">
             <div className="flex-col space-y-4">
               <h2 className="text-6xl font-black tracking-tight leading-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-50">
-                H! I am Gabriel Hideaki. <br /> Welcome to my{" "}
+              {"<"}<span className="text-transparent font-light bg-clip-text bg-gradient-to-r from-blue-800 to-purple-500">  / </span> Hi! I am Gabriel Hideaki. <br /> Welcome to my {">"}
               </h2>
               <h1 className="text-8xl font-black tracking-tight leading-snug text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-purple-500">
                 Portfolio
@@ -128,6 +128,13 @@ export default function Home() {
             <h1 className="text-center font-black text-5xl selection:bg-fuchsia-300 selection:text-fuchsia-900"> I'am modern <span className="cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-purple-500 transition ease-in-out hover:scale-110 duration-300">Web Developer</span></h1>
           </div>
         </section>
+
+        <div className="w-auto relative">
+          <Image
+          src={"/creating-project-gradient.png"}
+          width={1400}
+          height={1500}/>
+        </div>
 
 
       </main>
