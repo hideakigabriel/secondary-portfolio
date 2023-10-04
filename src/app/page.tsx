@@ -175,7 +175,7 @@ export default function Home() {
         {/* Project Section */}
 
         <section className="max-w-8xl mx-32 m-auto py-14">
-          <div className="flex flex-row justify-between">
+          <div className="flex flex-row justify-between mb-20">
             <h1 className="font-black text-5xl selection:bg-fuchsia-300 selection:text-fuchsia-900">
               My projects
             </h1>
@@ -184,21 +184,36 @@ export default function Home() {
               <Image src={"/next-button.svg"} width={10} height={10} alt="" />
             </div>
           </div>
-          
+
           {/* Projects Cards */}
 
-          <div>
-            <div>
-              <div>
-                <Image />
-              </div>
-              <h1>Budget Generator Hideaki Design</h1>
-              <p>Budget generator usign HTML, CSS, React in you development</p>
-              <div>
-                <a target="_blank" href="#">
-                  <Image src={"/play-icon.svg"} width={10} height={10} alt="" />
-                  <p>View project</p>
-                </a>
+          <div className="flex flex-row gap-4">
+            <div className="w-[368px] h-[482px] p-5 bg-[#161633] border-[1px] rounded-3xl border-[#595c6b]">
+              <div className="flex flex-col gap-4">
+                <Image
+                  id="pojectImage"
+                  className="min-w-full h-[216px] rounded-xl bg-cover"
+                  alt=""
+                  src={"/img-project-temp.png"}
+                  width={317}
+                  height={216}
+                />
+
+                <h1 className="font-black text-xl">Budget Generator Hideaki Design</h1>
+                <p>
+                  Budget generator usign HTML, CSS, React in you development
+                </p>
+                <div>
+                  <a target="_blank" href="#">
+                    <Image
+                      src={"/play-icon.svg"}
+                      width={10}
+                      height={10}
+                      alt=""
+                    />
+                    <p>View project</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
