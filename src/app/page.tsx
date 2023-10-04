@@ -142,7 +142,7 @@ export default function Home() {
               {" "}
               I'am a modern{" "}
               <span className="cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-purple-500 transition ease-in-out hover:scale-110 duration-300">
-                Web Developer
+                Web Developer Full Stack
               </span>
             </h1>
 
@@ -187,8 +187,8 @@ export default function Home() {
 
           {/* Projects Cards */}
 
-          <div className="flex flex-row gap-4">
-            <div className="w-[368px] h-[482px] p-5 bg-[#161633] border-[1px] rounded-3xl border-[#595c6b]">
+          <div className="flex flex-row gap-4 overflow-visible list-none relative transition duration-0 translate-x-1 w-full">
+            <div className="transition ease-in-out w-[368px] h-[482px] p-5 bg-[#161633] border-[1px] rounded-3xl border-[#595c6b] cursor-pointer hover:scale-[1.02] duration-150">
               <div className="flex flex-col gap-4">
                 <Image
                   id="pojectImage"
@@ -199,20 +199,54 @@ export default function Home() {
                   height={216}
                 />
 
-                <h1 className="font-black text-xl">Budget Generator Hideaki Design</h1>
+                <h1 className="font-black text-xl">
+                  Budget Generator Hideaki Design
+                </h1>
                 <p>
                   Budget generator usign HTML, CSS, React in you development
                 </p>
-                <div>
-                  <a target="_blank" href="#">
-                    <Image
-                      src={"/play-icon.svg"}
-                      width={10}
-                      height={10}
-                      alt=""
-                    />
-                    <p>View project</p>
-                  </a>
+
+                {/* Buttons */}
+
+                <div className="flex flex-row justify-between mt-6">
+                  <div className="flex flex-row items-center px-[14px] py-[6px] border-[1px] rounded-lg border-[#595c6b] bg-[#161633] hover:border-[#b3b8d7] duration-100">
+                    <a target="_blank" href="#" className="flex flex-row gap-2">
+                      <Image
+                        src={"/play-icon.svg"}
+                        width={10}
+                        height={10}
+                        alt=""
+                      />
+                      <p>View project</p>
+                    </a>
+                  </div>
+
+                  <div className="flex flex-row gap-2 items-center">
+
+                    {/* Button Github */}
+                    <div className="p-[6px] border-[1px] rounded-lg border-[#70BB82] bg-[#4CA044] hover:bg-[#5cc952] duration-100">
+                      <a target="_blank" href="#">
+                        <Image
+                          src={"/github-logo.svg"}
+                          width={18}
+                          height={18}
+                          alt=""
+                        />
+                      </a>
+                    </div>
+
+                    {/* Button Favorite */}
+                    <div className="p-[6px] border-[1px] rounded-lg border-[#595c6b] bg-[#161633] hover:border-[#b3b8d7] duration-100">
+                      <a target="_blank" href="#">
+                        <Image
+                          src={"/favorite-icon.svg"}
+                          width={18}
+                          height={18}
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
